@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Recent Work</title>
+<!-- Bootstrap -->
+<link href="css/w3.css" rel="stylesheet">
+
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+
+<style>
+.jumbotron {
+    background-image: url("images/work/Game.png") !important;
+    background-position: bottom left !important;
+    background-size: cover !important;
+}
+.jumbotron h1 {
+    color: #fff !important;/*font-family: 'Montserrat', sans-serif;*/
+}
+.jumbotron p {
+    color: #fff !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    padding: 1em !important;
+}
+</style>
+</head>
+<body id="my-welcome" style="margin-top: 70px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <a class="navbar-brand" href="#">Yusheng Ding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav nav-pills mr-auto">
+      <li class="nav-item nav-link"> <a class="nav-link" href="index.html">Home</a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="about.html">About me </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="resume.html">Resume and Background </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link active font-weight-bolder" href="work.html"><span class="sr-only">(current)</span>Recent Works </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="contact.html">Contacts </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="process.html">Process Page </a> </li>
+    </ul>
+    <span class="navbar-text">
+    <li class="nav-item nav-link dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Jump To </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#latest-work">Latest Work</a> <a class="dropdown-item" href="#more-portfolio-gallery">View More Gallery</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#welcome">Top</a> </div>
+    </li>
+    </span> </div>
+</nav>
+<section id="welcome" class="mt-5">
+  <div class="jumbotron text-center mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 jumbotron-box">
+          <h1>My Recent Works</h1>
+          <p style="background-color: rgba(255,255,255,0.00) !important"> I have working on some projects recently. <br>
+            Here you will see some demostrations. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 id="latest-work">Latest Works</h2>
+        <p>These are only partial works, I am working on making some of universal code into useful module/asset, and will post it later on GitHub. </p>
+      </div>
+    </div>
+    <div class="row">
+		
+      <div class="col-md-6 col-12 text-center">
+        <div class="card"> <img class="img-fluid w3-hover-opacity" src="images/work/healthbar.png" id="healthbar" alt="a health bar prefab in unity" onclick="showImg(this)">
+
+          <h4>Healthbar Prefab</h4>
+          <h6>This is a health bar prefab in Unity. It always automatically finds and faces the player camera.</h6>
+        </div>
+      </div>										  				
+								<!-- 
+								<div id="myModal" class="img-modal">
+							  <span class="img-modal-close">&times;</span>
+							  <img class="modal-content" id="img01">
+									  <div id="img-modal-caption"></div>
+					
+								</div>
+						The Old Modal 	-->
+      <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+        <div class="card"> <img class="img-fluid w3-hover-opacity" src="images/work/lp-zombiehead.png" alt="A zombie model I modified from an online model" onclick="showImg(this)">
+          <h4>Zombie Model</h4>
+          <h6>A zombie model I modified from an online model for <a href="https://github.com/davidysding/CCT423-Unity-Game-Development-Final-Assignment">Zombie Rain</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+        <div class="card"> <img class="img-fluid w3-hover-opacity" src="images/work/ut-theme.png" alt="U of T theme" onclick="showImg(this)">
+          <h4>Mockup of University of Toronto website</h4>
+          <h6>A mockup theme of <a href="https://www.utoronto.ca/">University of Toronto Offical Website</a> completely from scratch on my <a href="https://github.com/davidysding/UTM-CCIT-Web-Design-Course">GitHub</a></h6>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 text-center">
+        <div class="card"> <img class="img-fluid w3-hover-opacity" src="images/work/statemachine.png" alt="animation state machine" onclick="showImg(this)">
+          <h4>Animation State Machine</h4>
+          <h6>This is a state machine I made for a monster</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      
+		
+		<div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+        <div class="card"> <img class="img-fluid w3-hover-opacity" src="images/work/shaderPractice.png" alt="Unity shader shadow" onclick="showImg(this)">
+          <h4>Toon Shader Shadow</h4>
+          <h6>A toon shader ball with dynamic shadow (on the right). </h6>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 text-center">
+        <div class="card"> <img class="img-fluid w3-hover-opacity" src="images/work/ut-footer.png" alt="uoft website mockup footer" onclick="showImg(this)">
+          <h4>The Mockup Footer</h4>
+          <h6>Footer of University of Toronto website Mockup</h6>
+        </div>
+      </div>
+    </div>
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img class="modal-content" id="img01" style="width:100%" alt="here is where the clicked modal picture will be presented">
+  </div>
+</div>
+  </div>
+</section>
+<hr>
+	<!--
+	<section>
+
+		<div class="container mb-5">
+			<div class="slideshow-gallery-container">
+		  <div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+			<img src="images/About/cat.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">2 / 6</div>
+			<img src="images/About/gallery.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">3 / 6</div>
+			<img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">4 / 6</div>
+			<img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">5 / 6</div>
+			<img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">6 / 6</div>
+			<img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  <div class="slideshow-gallery-row">
+			<div class="slideshow-gallery-column">
+			  <img class="slideshow-gallery-thumb cursor" src="images/About/cat.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+			</div>
+			<div class="slideshow-gallery-column">
+			  <img class="slideshow-gallery-thumb cursor" src="images/About/gallery.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+			</div>
+			<div class="slideshow-gallery-column">
+			  <img class="slideshow-gallery-thumb cursor" src="images/About/piano.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			</div>
+			<div class="slideshow-gallery-column">
+			  <img class="slideshow-gallery-thumb cursor" src="images/About/picnic.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			</div>
+			<div class="slideshow-gallery-column">
+			  <img class="slideshow-gallery-thumb cursor" src="images/About/lecture.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+			</div>    
+			<div class="slideshow-gallery-column">
+			  <img class="slideshow-gallery-thumb cursor" src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+			</div>
+		  </div>
+		</div>
+		</div>
+	</section>
+	-->
+	
+<section>
+		<div class="container text-center">
+		<!-- Photo Grid -->			<h2 id="more-portfolio-gallery">View More Portfolio Gallery</h2>
+
+				<button class="btn-info" id="morebtn" onclick="readMore()"> View More </button>
+
+			<span id="moremore">
+
+
+			<div class="image-grid-row"> 
+			  <div class="image-grid-column">
+				<img class="img-fluid w3-hover-opacity" src="images/work/game-instructions.png" onclick="showImg(this)" alt="Instruction in Game">
+				<img class="img-fluid w3-hover-opacity" src="images/work/game-menu.png"  onclick="showImg(this)" alt="Game Main Menu">
+			  </div>
+			  <div class="image-grid-column">
+				<img class="img-fluid w3-hover-opacity" src="images/work/game-pause-menu.png"  onclick="showImg(this)" alt="Pause Menu">
+				<img class="img-fluid w3-hover-opacity" src="images/work/in-game.png"  onclick="showImg(this)" alt="in-game screenshot: scene of mountain and houses">
+			  </div>  
+			  
+			</div>
+					</span>
+	<span id="moredots"></span>
+		</div>
+	
+
+	</section>
+
+<hr>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Yusheng Ding. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

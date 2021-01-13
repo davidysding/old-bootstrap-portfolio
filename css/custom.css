@@ -1,0 +1,494 @@
+html {
+  scroll-behavior: smooth;
+	overflow-x: visible;
+
+}
+
+.navbar {
+	box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.61);
+}
+.navbar-light .nav-item .nav-link:hover {
+	background-color: #87ACFF;
+	box-shadow: 0px 0px 4px 4px rgba(0,26,55,0.61);
+	color: white;
+	font-weight: bold;
+}
+.navbar-light .nav-item .nav-link:focus {
+	font-weight: bold;
+	box-shadow: 0px 0px 4px 4px rgba(0,26,55,0.61);
+}
+.navbar-light .nav-item .active {
+	box-shadow: 0px 0px 1px 3px rgba(0,119,255,0.61);
+}
+.dropdown-menu {
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.87);
+	color: black !important;
+}
+
+.dropdown-item:hover{
+	background-color: rgba(0,119,255,0.61);
+}
+
+.btn-primary {
+	box-shadow: 0 0 40px 10px #CC1313 inset, 0 0 0 0 #CF6868;
+	background-color: #CC1313;
+	border-radius: 45px;
+
+}
+.btn-primary:hover {
+	box-shadow: 0 0 10px 0 #888888 inset, 0 0 10px 4px #888888;
+	transition: all 150ms ease-in-out;
+	background-color: #C60000;
+
+}
+.btn-primary:focus, .btn-primary.focus {
+	box-shadow: 0 0 10px 0 #888888 inset, 0 0 10px 4px #888888;
+	transition: all 150ms ease-in-out;
+	background-color: #D70000;
+ 	border-color: rgba(204,0,0,0.27);
+
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #C60000;
+ 	border-color: rgba(204,0,0,0.27);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #C60000;
+ 	border-color: rgba(204,0,0,0.27);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,37,37,0.50);
+}
+
+
+.btn-info {
+	  padding: 15px 32px;
+	  font-size: 16px;
+}
+
+/*from https://css-tricks.com/the-state-of-changing-gradients-with-css-transitions-and-animations/ */
+.jumbotron-main {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.jumbotron-box {
+	background-color: rgba(0,0,0,0.5) !important;
+
+}
+.jumbotron h1 {
+    color: #fff !important;
+	margin-top: 20px;
+}
+.jumbotron p {
+    color: #fff !important;
+    padding: 1em !important; 
+}
+
+
+
+
+.video-placeholder {
+	position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background-size: cover;
+	width: 100%; 
+	height: 100%;
+}
+.video-placeholder video {
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
+}
+.video-placeholder iframe {
+	width: 100%;
+}
+@media only screen and (max-width: 767px) {
+	.video-placeholder iframe{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.video-placeholder .video-caption {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.video-placeholder .video-caption h1 {
+	color: #fff;
+	font-size: 8em;
+	text-align: center;
+}
+
+.card {
+	box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.61);
+}
+.card:hover {
+	transform: translateY(-20px);
+	box-shadow: 4px 4px 8px 8px rgba(0,0,0,0.87);
+	transition: all 150ms ease-in-out;
+
+}
+.nav-link.active {
+	box-shadow: 0px 0px 1px 3px rgba(0,119,255,0.61);
+
+}
+.book-img {
+	display:flex;
+  	flex-wrap:wrap;
+	width:30%;
+}
+@media only screen and (max-width: 767px) {
+	.book-img {
+		width: 90% !important;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+.carousel-item iframe {
+	height: 270px;
+	
+}
+	
+}
+
+.media img {
+	width: 40px;
+	heigh: auto;
+}
+
+
+
+
+.img-container-overlay {
+	position: flex;
+	display: inline-block;
+	width: auto;
+	height: 250px;
+
+}
+@media only screen and (max-width: 767px) {
+	#spaceholderforoverlayimg {
+		height: 350px;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 2em;
+	}
+
+}
+.overlay-image {
+  display: block;
+  	align-content: center;
+	height: 100%;
+	width: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.img-container-overlay:hover .overlay {
+  opacity: 0.8;
+}
+.img-container-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+/* Slideshow Gallery 
+https://www.w3schools.com/......... link to appropriate location...
+*/
+.slideshow-gallery-container img,
+img.gallery-thumb {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slideshow-gallery-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.slideshow-gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.slideshow-gallery-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.slideshow-gallery-thumb {
+  opacity: 0.6;
+}
+
+.active,
+.slideshow-gallery-thumb:hover {
+  opacity: 1;
+}
+
+
+
+
+
+img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* image modal modified from w3school*/
+
+/* The Modal (background) */
+.img-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 50px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#img-modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #img-modal-caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.img-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.img-modal-close:hover,
+.img-modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/***********************/
+
+/* portfolio gallery*/
+
+/* Responsive Image Grid 
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+*/
+
+.image-grid-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.image-grid-column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.image-grid-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .image-grid-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .image-grid-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.card h6 a{
+	text-decoration: underline;
+	color: rgba(13,0,255,1.00);
+}
+
+/***https://www.w3schools.com/howto/howto_google_charts.asp*****************/
+#piechart {
+width: 100%;
+
+}
+#piechart rect{
+	width: 100%;
+	height: auto;
+}
+
+.w3-modal {
+	margin-top: 50px;
+}
+
+/*https://www.w3schools.com/howto/howto_js_read_more.asp*/
+#moremore {display: none;}

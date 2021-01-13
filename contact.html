@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yusheng's Contact Info</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body style="padding-top: 70px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <a class="navbar-brand" href="#">Yusheng Ding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav nav-pills mr-auto">
+      <li class="nav-item nav-link"> <a class="nav-link" href="index.html">Home</a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="about.html">About me <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="resume.html">Resume and Background </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="work.html">Recent Works </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link active font-weight-bolder" href="contact.html">Contacts <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="process.html">Process Page </a> </li>
+    </ul>
+    <span class="navbar-text">
+    <li class="nav-item nav-link dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Jump To </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+        <a class="dropdown-item" href="#welcome">Form</a> </div>
+    </li>
+    </span> </div>
+</nav>
+	<section>
+  <div class="jumbotron jumbotron-main text-center mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 jumbotron-box">
+          <h1>Contact Form</h1>
+          <p> Fill Out the Form to Contact Me. 
+          </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="welcome" class="container">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8  col-12 jumbotron">
+        <form>
+          <div class="form-group">
+			  				<legend>Basic Info</legend>
+
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="message">Suggestion</label>
+            <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Please enter your suggestion here." aria-describedby="messageHelp"></textarea>
+            <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter your suggestion here.</span> </div>
+          <div class="form-row mb-4">
+            <div class="col-md-12 col-lg-6">
+              <label for="who">Who are you?</label>
+              <select id="who" class="custom-select" required>
+                <option value="">Click here to select</option>
+                <option value="1">HR</option>
+                <option value="2">Developer</option>
+                <option value="3">Professor</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <legend>How would you like the response?</legend>
+            <div class="form-row">
+              <div class="col-md-3 mb-3 col-lg-4">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend"> <span class="input-group-text" id="inputGroupPrepend">@</span> </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Your Name here" aria-describedby="inputGroupPrepend" required>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3 col-lg-4">
+                <label for="email">
+                  <input type="checkbox" name="email" id="emailme">
+                  Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Email here." >
+              </div>
+              <div class="col-md-3 mb-3 col-lg-4">
+                <label for="phoneme">
+                  <input type="checkbox" name="phoneme" id="phone">
+                  Phone</label>
+                <input type="text" id ="phoneme" class="form-control" placeholder="Enter Phone# here.">
+              </div>
+            </div>
+            <div class="form-row">
+				<legend>How likely would you hire me?</legend>
+
+              <div class="form-group col-12">
+                <label for="formControlRange">The higher the more likely</label>
+                <input type="range" class="form-control-range" id="formControlRange">
+              </div>
+            </div>
+            <div class="form-row">
+              				              <legend>How likely would you recommand this website</legend>
+
+				<div class="form-group col-lg-12 justify-content-between">
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">I am sharing it right now!</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Absolutely!</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                  <label class="form-check-label" for="inlineRadio3">Nope, not gonna do it (disabled)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © Yusheng Ding. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

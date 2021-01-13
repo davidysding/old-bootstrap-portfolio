@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Process Page</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body style="margin-top: 70px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <a class="navbar-brand" href="#">Yusheng Ding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav nav-pills mr-auto">
+      <li class="nav-item nav-link"> <a class="nav-link" href="index.html">Home</a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="about.html">About me </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="resume.html">Resume and Background </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="work.html">Recent Works </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link" href="contact.html">Contacts </a> </li>
+      <li class="nav-item nav-link"> <a class="nav-link active font-weight-bolder" href="process.html"><span class="sr-only">(current)</span>Process Page </a> </li>
+    </ul>
+    <span class="navbar-text">
+    <li class="nav-item nav-link dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Jump To </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#temp">Template </a> <a class="dropdown-item" href="#Responsive">Responsive </a><a class="dropdown-item" href="#content">Content </a><a class="dropdown-item" href="#Design">Design </a><a class="dropdown-item" href="#access">Accessibility </a><a class="dropdown-item" href="#IA">IA </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#welcome">Top</a> </div>
+    </li>
+    </span> </div>
+</nav>
+<section id="welcome" class="mt-5">
+  <div class="jumbotron jumbotron-main text-center mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 jumbotron-box">
+          <h1>The Process and Approch in this project</h1>
+          <p> Here I would talk about the overall design and the process of the website </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div id="temp"  class="row">
+      <div class="col-12">
+        <h2><span class="badge badge-info">1.</span> Picking The Basic Intergrated Template On DreamWeaver </h2>
+        <p>I have use the portfolio template four times! However, I made many modifications in terms of the structure and content.<br>
+			I used the tempate since it has a basic layout of the website: a navbar, a footer, and jumbotron. (I did use Jumbotron on almost all of the webiste, because I think this is how make the webiste look consistent. This is also what I found when mocking up the UofT website for the first assignment, in which UofT websites have a jumbotron on every inner page.)<br>
+
+			For the resume page, I just the basic resume to start with. <br>
+			For the content page, I believed I migrate the content part of the resume part and made it a single page. <br>
+			Resume page and the content page did not have the jumbotron. Then I felt that might make the look not consistent throught the whole website experience. Therefore, I added it and used a linear gradient background that I found from <a href="https://css-tricks.com/the-state-of-changing-gradients-with-css-transitions-and-animations/">  CSS-Trick website</a>(if I do not have a good picture that fit the theme of the inner page). <br>
+			For the framework, I have make many modification espeically on button. Since most original buttons do not have shadows that interact with the operations which can potentially be an accessibility issues.<br>
+		  </p>
+		  
+      </div>
+    </div>
+	  <hr>
+	  
+	  <div id="Responsive" class="row">
+      <div class="col-12">
+        <h2><span class="badge badge-info">2.</span> Responsive Web Development </h2>
+        <p>There are two major parts. First, responsive content. Second, responsive grid. Bootstrap have a excellent responsive grid system that just work almost perfectly for everything. However, it is not the case when it comes to some specific components, which I did not expect before I just them.  
+<br>
+			For Carousel as example, I am very enjoying using this. However, there are some problems that I need to make modifications to it. For example, it did not fit video content perfectly. I intergrated Youtube video as a carousel-item into the carousel in order to make the content more diverse. However, it did not support the scale... I have write fixed pixel heigh and width in order to scale it as expected. In other words, I need to make it responsive throug @media in the css with proper size in css. Besides, it also does not support the images with different scales well. It only work nice, if the images are all in the same proportional scale, which is not my case. I ran out of time and failed to find a way to create a image frame that could contains the images and prevent it from being scaled when displaying all the items in the same size. <br>
+			Nevertheless, I made the image responsive. Therefore, even though the scales are different, but the image and the video will be responsive for different devices and display the content properly.    
+		  </p>
+		  
+      </div>
+    </div>
+	  <hr>
+	  <div id="content" class="row">
+      <div class="col-12">
+        <h2><span class="badge badge-info">3.</span> Content Production </h2>
+        <p>I am not the type of people who use the camera record their own life. Compare to them, I am a very techy guy who loves coding and playing video games. Therefore, I thought I might be able to take screenshots and screen recording from one of my 3D projects to demostrate the technical side. For the life side, I used the pictures from my previous working experiences, such as part-time and internship. <br>
+		I avoided using the pictures from online. Even for the icons in about me, I drew it myself with Adobe Illustration. <br>
+		My inner pages includes resume, about, contact and porfolio gallery. <br>
+
+		  </p>
+		  
+      </div>
+    </div><hr>
+	  <div id="Design" class="row">
+      <div class="col-12">
+        <h2><span class="badge badge-info">4.</span> Design: Communication and Graphic </h2>
+        <p> 
+			I will talk about the design in the order of the website. <br>
+			The very first part of the website is the navigation bar. I think one of the best part of using a framework is the that the developers consider all of the details for us. Therefore, in order to make the best of that with the best reponsive practice, I used the one of the default navigation bar (light navigation bar) in the framework. It is not to say that I have made no modifications for it: I make the navigation bar items look like other buttons in the framework, so that the website look consistent. Other than that, I also made "jump to" function for quick navigation within each page and search function (it seems to be very hard to implement a search for the whole page).  <br>
+			other very important thing about the navigation bar is that I designed it to be fixed navigation bar, which means it will stay on the top of the view no matter how the user scroll. This also causes many problems: for example, I have to add margin-top: 70px; to the html properties and all the image model properties. Otherwise, content would likely to be convered by the navigation bar. <br>
+			For the body part, I almost use container row and gird as much as possbile, so that the content would as flexible as possible for responsive design. The hardest thing to implement was Slideshow. <br>
+			One of the regret was that I do not have time to implement the <a href="https://www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp">scroll spy</a>, which I think it will add many dynamic into the responsive design of the website. <br>
+			In a lot of my page, I added many links to my Gitbhub in consideration of letting the user easier to access them. I know it might not be a good practice for commerical website, because the traffics are redirected outside of the website, however, since I did that because I would like to demonstrates my project effectively. <br>
+			For the order of script, I think it can cause detrimental, unwanted, and unexpected  result if we do not properly order it. For my case, I imported w3.css for the image modal function on one inner page. However, after I imported I found that many of my settings such as font and colors are changed. Therefore, I used f12 function to inspect and found that the w3.css overwrite it. At first, I was trying to commenting out the lines of code in w3.css that affect the settings, then I realized that just changed the order of importation of css change it by a lot! The same for JS! And all those code deletion in w3.css were unnecessary! Except for one line of code that changes my font and font size, which are not seems to be specified in Bootstrap framework. 
+		  </p>
+		  
+      </div>
+    </div><hr>
+	  <div id="access" class="row">
+      <div class="col-12">
+        <h2><span class="badge badge-info">5.</span> Web Accessibility </h2>
+        <p> I uses WAVE and DreamWeaver to check my accessibility. For Wave, it finds the errors and the colour contrast problems for me. Dreamweaver also reminds my when I do not have alt text for an image. <br>
+		One thing I notice very frustrating is that class such as "text-secondary" in the Bootstrap framework will make the text with contract errors with WAVE. Therefore, I removed some use of it and use others instead. There are also many similar cases.  <br>
+		
+		  </p>
+		  
+      </div>
+    </div><hr>
+	  <div id="IA" class="row">
+      <div class="col-12">
+        <h2><span class="badge badge-info">6.</span> IA </h2>
+        <p> 
+			There are six pages in total: home , process, about, resume, portfolio, and contacts. These are at the main navigation. <br>
+			For the secondary part, since there are not much utilities, I was intented to add in-page search, which can be very useful if it works. However, I found that since I already have a jump to, which is a table of content for that page. Therefore, I felt it is a little redundant to have a in-page search. 
+		  </p>
+		  
+      </div>
+    </div>
+
+  </div>
+</section>
+<hr>
+
+
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Yusheng Ding. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
